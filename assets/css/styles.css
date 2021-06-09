@@ -108,8 +108,8 @@ body.scale-cv {
 }
 
 .scale-cv .home__img {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
 }
 
 .scale-cv .home__container {
@@ -170,6 +170,7 @@ body.scale-cv {
 
 .scale-cv .interests__container {
   column-gap: 2.5rem;
+  padding-bottom: 29px;
 }
 
 body {
@@ -329,8 +330,8 @@ img {
 }
 
 .home__img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
