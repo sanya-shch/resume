@@ -103,6 +103,7 @@ function removeScaleCv() {
 }
 
 /*==================== GENERATE PDF ====================*/
+/*
 // PDF generated area
 const areaCv = document.getElementById("area-cv");
 const resumeBtn = document.getElementById("resume-button");
@@ -132,3 +133,4 @@ resumeBtn.addEventListener("click", () => {
   // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
   setTimeout(removeScaleCv, 5000);
 });
+*/
