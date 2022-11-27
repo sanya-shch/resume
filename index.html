@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Oleksandr Shchipkov</title>
   </head>
+<!--  <body class="scale-cv">-->
   <body>
     <header class="l-header" id="header">
       <nav class="nav bd-container">
@@ -84,7 +85,11 @@
           <section class="home" id="home">
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
-                <img src="assets/images/avatar.png" alt="" class="home__img" />
+<!--                <img src="assets/images/avatar.webp" alt="" class="home__img" />-->
+                <picture class="home__img">
+                  <source type="image/webp" srcset="assets/images/avatar.webp">
+                  <img src="assets/images/avatar.png" alt="" loading="lazy">
+                </picture>
 
                 <h1 class="home__title">OLEKSANDR <b>SHCHIPKOV</b></h1>
 
@@ -156,36 +161,39 @@
               id="theme-button"
             ></i>
 
-            <!--<i
+            <!-- (to generate) Download temp start  -->
+
+            <!-- <i
               class="bx bx-download generate-pdf"
               title="Generate PDF"
               id="resume-button"
-            ></i>-->
+            ></i> -->
 
             <div>
               <a
-                download=""
-                href="assets/pdf/Oleksandr_Shchipkov_resume.pdf"
-                class="light-file"
+                  download=""
+                  href="assets/pdf/Oleksandr_Shchipkov_resume.pdf"
+                  class="light-file"
               >
                 <i
-                  class="bx bx-download generate-pdf"
-                  title="Generate PDF"
+                    class="bx bx-download generate-pdf"
+                    title="Download PDF"
                 ></i>
               </a>
 
               <a
-                download=""
-                href="assets/pdf/Oleksandr_Shchipkov_resume_dark.pdf"
-                class="dark-file"
+                  download=""
+                  href="assets/pdf/Oleksandr_Shchipkov_resume_dark.pdf"
+                  class="dark-file"
               >
                 <i
-                  class="bx bx-download generate-pdf"
-                  title="Generate PDF"
+                    class="bx bx-download generate-pdf"
+                    title="Download PDF"
                 ></i>
               </a>
             </div>
-           </section>
+            <!-- Download temp finish  -->
+          </section>
 
            <!--<section class="social section">
               <h2 class="section-title">SOCIAL</h2>
@@ -218,115 +226,128 @@
             </div>
           </section>-->
 
-          <section class="profile section" id="profile">
+          <section class="profile section display_none_desktop" id="profile">
             <h2 class="section-title">PROFILE</h2>
 
             <p class="profile__description">
-              Have a high proficiency in front end sphere and commercial experience in modern development processes. I am a purposeful person who is looking for new opportunities in Front-end Development.
-              Can adapt quickly, goal-oriented, motivated for personal and career growth. Always ready to improve my skill. I am looking for a job in the position of Middle JavaScript / React.js developer.
+              Have a high proficiency in <span style=" white-space: nowrap;">the front-end</span> sphere and commercial experience in modern development processes. I am a purposeful person who is looking for new opportunities in Front-end Development. Can adapt quickly, goal-oriented, and motivated for personal and career growth. Always ready to improve my skill. I am looking for a job in the position of Middle JavaScript / React.js developer.
             </p>
           </section>
 
           <section class="skills section" id="skills">
             <h2 class="section-title">SKILLS</h2>
 
-            <div class="skills__content bd-grid">
+            <div class="skills__content">
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span>JavaScript
+                  JavaScript
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>React.Js
+                  ES6+
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Node.Js
+                  React.js
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Redux
+                  Redux
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Redux-thunk
+                  Redux-Thunk
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Reselect
+                  Formik
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>React-intl
+                  Flow
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>React Native
+                  TypeScript
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>GraphQL
+                  React-Intl
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Websocket
+                  Node.js
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Flow
+                  GraphQL
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>TypeScript
-                </li>
-              </ul>
-
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span>MongoDB (Mongoose)
+                  Websocket
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>HTML
+                  FireBase
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>CSS
+                  Redis
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Styled-components
+                  MongoDB
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Css-modules
+                  Mongoose
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Scss
+                  Postman
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Git
+                  HTML
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Webpack
+                  CSS
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Jest
+                  SCSS
+                </li>
+
+                <li class="skills__name">
+                  Css Modules
+                </li>
+
+                <li class="skills__name">
+                  Styled Components
+                </li>
+
+                <li class="skills__name">
+                  Git
+                </li>
+
+                <li class="skills__name">
+                  Webpack
+                </li>
+
+                <li class="skills__name">
+                  Jest
                 </li>
               </ul>
             </div>
           </section>
 
-          <!-- temp section -->
+          <!-- (to generate) temp section - start -->
 
           <!-- <section class="home temp-home">
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
-                <img src="assets/images/avatar.png" alt="" class="home__img" />
+                <img src="assets/images/avatar.webp" alt="" class="home__img" />
 
                 <h1 class="home__title">OLEKSANDR <b>SHCHIPKOV</b></h1>
 
@@ -397,9 +418,73 @@
               id="resume-button"
             ></i>
           </section> -->
+
+          <!-- temp section - finish -->
+
+          <section class="languages section display_none_mobile">
+            <h2 class="section-title">LANGUAGES</h2>
+
+            <div class="temp-list">
+              <ul class="">
+                <li class="languages__name">
+                  <i class='bx bx-message-square-dots'></i>English
+                </li>
+
+                <li class="languages__name">
+                  <i class='bx bx-message-square-dots'></i>Ukrainian
+                </li>
+
+                <li class="languages__name">
+                  <i class='bx bx-message-square-dots'></i>Russian
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="interests section display_none_mobile">
+            <h2 class="section-title">INTERESTS</h2>
+
+            <div class="temp-list">
+              <div class="interests__content">
+                <i class='bx bx-code-curly interests__icon'></i>
+                <span class="interests__name">Development</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-cycling interests__icon"></i>
+                <span class="interests__name">Bicycle</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Music</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-movie interests__icon"></i>
+                <span class="interests__name">Movies</span>
+              </div>
+            </div>
+          </section>
         </div>
 
         <div class="resume__right">
+          <section class="profile section display_none_mobile">
+            <h2 class="section-title">PROFILE</h2>
+
+            <p class="profile__description">
+              Have a high proficiency in the front-end sphere and commercial experience in modern development processes.
+            </p>
+
+            <p class="profile__description">
+              I am a purposeful person who is looking for new opportunities in Front-end Development. Can adapt quickly, goal-oriented, and motivated for personal and career growth. Always ready to improve my skill.
+            </p>
+
+            <p class="profile__description">
+              I am looking for a job in the position of Middle JavaScript / React.js developer.
+            </p>
+          </section>
+
           <section class="experience section" id="experience">
             <h2 class="section-title">EXPERIENCE</h2>
 
@@ -411,43 +496,120 @@
                 </div>
 
                 <div class="experience__data bd-grid">
+                  <h3 class="experience__title">JS Developer</h3>
+                  <span class="experience__company">airSlate | From March 2022 to the present</span>
+                  <span class="experience__descriptions">
+                    <strong>E-sign.</strong> An enterprise-grade eSignature that scales with your workflow. The app provides tools that empower individuals and businesses to digitize their approval processes, eliminate errors, create productive teams and easily integrate eSignatures into the apps and systems.
+                  </span>
+
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">Redux</div>
+                    <div class="badge">Redux Thunk</div>
+                    <div class="badge">Reselect</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">Node.js</div>
+                    <div class="badge">Redis</div>
+                    <div class="badge">Flow</div>
+                    <div class="badge">TypeScript</div>
+                  </div>
+
+<!--                  <span class="experience__descriptions">-->
+<!--                    Tools & Technologies used: <br/>-->
+<!--                    - Framework: React<br/>-->
+<!--                    - State: Redux + Redux Thunk + Reselect <br/>-->
+<!--                    - Router: React Router <br/>-->
+<!--                    - Types: Flow, TypeScript <br/>-->
+<!--                    - Tooling: Webpack, Babel, Prettier <br/>-->
+<!--                  </span>-->
+                </div>
+              </div>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
                   <h3 class="experience__title">Front End Developer</h3>
-                  <span class="experience__company">Memcrab | From April 2020 to the present</span>
+                  <span class="experience__company">memCrab | From April 2020 to February 2022</span>
                   <span class="experience__descriptions">
                     <strong>E-Commerce.</strong> Platform for the window industry, where window
                     manufacturers, sellers and installers can present their
                     products and services, as well as establish partnerships.
                   </span>
 
-                  <span class="experience__descriptions">
-                    Tools & Technologies used: <br/>
-                    - Framework: React (SSR)<br/>
-                    - State: Redux + Redux Thunk + Reselect, Formik <br/>
-                    - Router: React Router <br/>
-                    - CSS: CSS Modules <br/>
-                    - Types: Flow <br/>
-                    - Testing: Jest, React Testing Library <br/>
-                    - Internationalization: React Intl <br/>
-                    - Tooling: Webpack, Babel, Husky, Prettier, SVGR, Typed Contracts, PDFMake <br/>
-                  </span>
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">Redux</div>
+                    <div class="badge">Redux Thunk</div>
+                    <div class="badge">Reselect</div>
+                    <div class="badge">Formik</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">CSS Modules</div>
+                    <div class="badge">Node.js (SSR)</div>
+                    <div class="badge">Flow</div>
+                    <div class="badge">Typed Contracts</div>
+                    <div class="badge">Jest</div>
+                    <div class="badge">React Testing Library</div>
+                    <div class="badge">React Intl</div>
+                    <div class="badge">Webpack</div>
+                    <div class="badge">Babel</div>
+                    <div class="badge">Husky</div>
+                    <div class="badge">SVGR</div>
+                    <div class="badge">PDFMake</div>
+                  </div>
+
+<!--                  <span class="experience__descriptions">-->
+<!--                    Tools & Technologies used: <br/>-->
+<!--                    - Framework: React (SSR)<br/>-->
+<!--                    - State: Redux + Redux Thunk + Reselect, Formik <br/>-->
+<!--                    - Router: React Router <br/>-->
+<!--                    - CSS: CSS Modules <br/>-->
+<!--                    - Types: Flow <br/>-->
+<!--                    - Testing: Jest, React Testing Library <br/>-->
+<!--                    - Internationalization: React Intl <br/>-->
+<!--                    - Tooling: Webpack, Babel, Husky, Prettier, SVGR, Typed Contracts, PDFMake <br/>-->
+<!--                  </span>-->
 
                   <span class="experience__descriptions">
-                    <strong>Online learning platforms.</strong>
+                    <strong>Learning platforms.</strong> It's an online platform for teaching and learning online.
                   </span>
 
-                  <span class="experience__descriptions">
-                    Tools & Technologies used: <br/>
-                    - Framework: React (SSR)<br/>
-                    - State: React Context Api, Formik <br/>
-                    - Router: React Router <br/>
-                    - CSS: CSS Modules <br/>
-                    - Types: TypeScript <br/>
-                    - Testing: Jest, React Testing Library <br/>
-                    - Internationalization: Lingui <br/>
-                    - Tooling: Webpack, Babel, Husky, Prettier, SVGR, Zod <br/>
-                  </span>
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">React Context Api</div>
+                    <div class="badge">Formik</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">CSS Modules</div>
+                    <div class="badge">Node.js (SSR)</div>
+                    <div class="badge">Zod</div>
+                    <div class="badge">TypeScript</div>
+                    <div class="badge">Jest</div>
+                    <div class="badge">React Testing Library</div>
+                    <div class="badge">Lingui</div>
+                    <div class="badge">Webpack</div>
+                    <div class="badge">Babel</div>
+                    <div class="badge">Husky</div>
+                  </div>
+
+<!--                  <span class="experience__descriptions">-->
+<!--                    Tools & Technologies used: <br/>-->
+<!--                    - Framework: React (SSR)<br/>-->
+<!--                    - State: React Context Api, Formik <br/>-->
+<!--                    - Router: React Router <br/>-->
+<!--                    - CSS: CSS Modules <br/>-->
+<!--                    - Types: TypeScript <br/>-->
+<!--                    - Testing: Jest, React Testing Library <br/>-->
+<!--                    - Internationalization: Lingui <br/>-->
+<!--                    - Tooling: Webpack, Babel, Husky, Prettier, SVGR, Zod <br/>-->
+<!--                  </span>-->
                 </div>
               </div>
+
+<!--             <h2 class="section-title temp-title">EXPERIENCE</h2>-->
 
               <div class="experience__content">
                 <div class="experience__time">
@@ -456,34 +618,69 @@
                 </div>
 
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Front End Developer</h3>
+                  <h3 class="experience__title">Full Stack Developer</h3>
                   <span class="experience__company">FREELANCE | From June 2019 to February 2020</span>
                   <span class="experience__descriptions">
                     <strong>Vacation portal.</strong> Website where employees can track and set their vacation.
                   </span>
 
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">Redux</div>
+                    <div class="badge">Redux Thunk</div>
+                    <div class="badge">Reselect</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">Scss</div>
+                    <div class="badge">React Intl</div>
+                  </div>
+
+<!--                  <span class="experience__descriptions">-->
+<!--                    Tools & Technologies used: <br/>-->
+<!--                    - Framework: React <br/>-->
+<!--                    - State: Redux + Redux Thunk + Reselect <br/>-->
+<!--                    - Router: React Router <br/>-->
+<!--                    - CSS: Scss <br/>-->
+<!--                    - Tooling: Create React App, Axios <br/>-->
+<!--                  </span>-->
+
                   <span class="experience__descriptions">
-                    Tools & Technologies used: <br/>
-                    - Framework: React <br/>
-                    - State: Redux + Redux Thunk + Reselect <br/>
-                    - Router: React Router <br/>
-                    - CSS: Scss <br/>
-                    - Tooling: Create React App, Axios <br/>
+                    <strong>E-Commerce.</strong> Online electronics store.
                   </span>
+
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">Scss</div>
+                    <div class="badge">Node.js</div>
+                    <div class="badge">Express</div>
+                    <div class="badge">Mongoose</div>
+                    <div class="badge">GraphQL</div>
+                    <div class="badge">Websocket</div>
+                  </div>
 
                   <span class="experience__descriptions">
                     <strong>E-Commerce.</strong> Online clothing store.
                   </span>
 
-                  <span class="experience__descriptions">
-                    Tools & Technologies used: <br/>
-                    - Framework: React <br/>
-                    - State: Redux + Redux Thunk + Reselect <br/>
-                    - Router: React Router <br/>
-                    - CSS: Styled Components <br/>
-                    - Internationalization: React Intl <br/>
-                    - Tooling: Webpack, Babel, Prettier, Axios <br/>
-                  </span>
+                  <div class="badges_list">
+                    <div class="badge">React</div>
+                    <div class="badge">Redux</div>
+                    <div class="badge">Redux Thunk</div>
+                    <div class="badge">Reselect</div>
+                    <div class="badge">React Router</div>
+                    <div class="badge">React Intl</div>
+                    <div class="badge">Styled Components</div>
+                  </div>
+
+<!--                  <span class="experience__descriptions">-->
+<!--                    Tools & Technologies used: <br/>-->
+<!--                    - Framework: React <br/>-->
+<!--                    - State: Redux + Redux Thunk + Reselect <br/>-->
+<!--                    - Router: React Router <br/>-->
+<!--                    - CSS: Styled Components <br/>-->
+<!--                    - Internationalization: React Intl <br/>-->
+<!--                    - Tooling: Webpack, Babel, Prettier, Axios <br/>-->
+<!--                  </span>-->
                 </div>
               </div>
             </div>
@@ -599,38 +796,48 @@
             </div>
           </section>
 
-          <section class="languages section" id="languages">
+          <section class="languages section display_none_desktop" id="languages">
             <h2 class="section-title">LANGUAGES</h2>
 
             <div class="languages__container">
               <ul class="languages__content bd-grid">
-                <li class="languages__name">
+                <li class="languages__name margin-null">
                   <span class="languages__circle"></span>English
                 </li>
 
-                <li class="languages__name">
+                <li class="languages__name margin-null">
                   <span class="languages__circle"></span>Ukrainian
                 </li>
 
-                <li class="languages__name">
+                <li class="languages__name margin-null">
                   <span class="languages__circle"></span>Russian
                 </li>
               </ul>
             </div>
           </section>
 
-          <section class="interests section" id="interests">
+          <section class="interests section display_none_desktop" id="interests">
             <h2 class="section-title">INTERESTS</h2>
 
             <div class="interests__container bd-grid">
               <div class="interests__content">
-                <i class="bx bx-headphone interests__icon"></i>
-                <span class="interests__name">Music</span>
+                <i class='bx bx-code-curly interests__icon'></i>
+                <span class="interests__name">Development</span>
               </div>
+
+<!--              <div class="interests__content">-->
+<!--                <i class='bx bx-shape-square interests__icon'></i>-->
+<!--                <span class="interests__name">3D modeling</span>-->
+<!--              </div>-->
 
               <div class="interests__content">
                 <i class="bx bx-cycling interests__icon"></i>
                 <span class="interests__name">Bicycle</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Music</span>
               </div>
 
               <div class="interests__content">
