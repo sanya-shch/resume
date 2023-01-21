@@ -463,6 +463,10 @@ img {
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
+.education__content:last-child .education__line,
+.experience__content:last-child .experience__line {
+  height: calc(100% - 1.5rem);
+}
 
 .education__data {
   gap: 0.5rem;
